@@ -22,7 +22,7 @@
 
 
 <div align="right">
-  <button href="#top">🔝 back to top</button>
+  <button style="border: 1px solid grey;" href="#top">🔝 back to top</button>
 </div>
 
 [appmasters]: https://appmasters.io/
