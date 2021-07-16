@@ -8,9 +8,19 @@ const { isSearchQueryValid, searchWhitelisted } = require('../utils')
  */
 async function heroInterface (_request, _response, _next) {
   const { slug } = _request.params
-  /** @BusinessRule - Create a Get / Hero / {Slug} route, which will get the hero in question by the Slug attribute */
+  console.log('***** slug', slug)
+
   /** @BusinessRule - If the hero exists, only he with Status 200 */
-  /** @BusinessRule - If the hero does not exist, return 404 */
+  const cacheWhiteList = ['slug']
+  const cacheObject = readCacheFile() || {}
+  const searchResults = await searchWhitelisted(cacheWhiteList, slug, cacheObject) || []
+  if (searchResults.length) {
+    return _response
+      .json([...searchResults])
+  }
+  
+  // /** @BusinessRule - If the hero does not exist, return 404 */
+  return _response.sendStatus(400)
 }
 
 module.exports = {
