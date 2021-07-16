@@ -6,11 +6,16 @@
   "author": "andersonbosa <anderson.bosa0@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "rm ./src/cache/cache.json ; nodemon ./src/server.js -i ./src/cache/cache.json"
+    "dev": "rm ./src/database/cache.json ; nodemon ./src/server.js -i ./src/database/cache.json",
+    "start": "node ./src/server.js # Heroku release",
+    "release:git": "git add . && git commit -m \"release at $(date)\" ; git push",
+    "release:heroku": "git push heroku master && heroku logs --tail",
+    "release": "yarn release:git && yarn release:heroku"
   },
   "dependencies": {
     "axios": "^0.21.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",

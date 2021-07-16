@@ -13,12 +13,14 @@
   - [ ] ao inicializar o servidor (api), deve-se baixar um arquivo que sera considerado como cache
   - [ ] ler/escrever `cache.json`
   - [ ] adicionar/enxertar/agregar ao cache
+
 - [ ] interface para busca
   - [ ] uma lista de resultados
-  - [ ] buscar o valor entre as props
-  - [ ] buscar no cache
-    - se nao tiver cache:
-      - [ ] buscar na api
+    - [ ] buscar o valor entre as props
+    - [ ] buscar no cache
+      - se nao tiver cache:
+        - [ ] buscar na api
+
 - [ ] interface para buscar heroi
   - [ ] buscar pela propriedade {slug}
   - ler doc da api superhero
