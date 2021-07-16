@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# don't store database/cache from dev.
+cache.json
