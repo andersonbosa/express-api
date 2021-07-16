@@ -62,7 +62,6 @@ async function isSearchQueryValid (searchQuery = '') {
 }
 
 module.exports = {
-  searchResultsIn,
   searchWhitelisted,
   getFromApi,
   isSearchQueryValid
