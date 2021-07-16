@@ -29,6 +29,9 @@ function readCacheFile () {
   return JSON.parse(fileContent || {})
 }
 
+/**
+ * Configures the cache for the server.
+ */
 async function setupServerCache () {
   getFromApi('/all.json')
     .then(response => {
@@ -45,6 +48,5 @@ async function setupServerCache () {
 module.exports = {
   writeCacheFile,
   readCacheFile,
-  setupServerCache,
-  cacheMiddleware: () => { }
+  setupServerCache
 }

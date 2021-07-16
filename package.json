@@ -9,7 +9,7 @@
     "dev": "rm ./src/database/cache.json ; nodemon ./src/server.js -i ./src/database/cache.json",
     "start": "node ./src/server.js # Heroku release",
     "release:git": "git add . && git commit -m \"release at $(date)\" ; git push",
-    "release:heroku": "git push heroku master && heroku logs --tail",
+    "release:heroku": "git push heroku master && heroku logs",
     "release": "yarn release:git && yarn release:heroku"
   },
   "dependencies": {

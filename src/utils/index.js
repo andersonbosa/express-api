@@ -12,17 +12,6 @@ const axiosClient = axios.create({
 })
 
 /**
- *
- *
- * @param {string} [searchValue='']
- * @param {*} [searchedObject={}]
- * @return {*}
- */
-function searchResultsIn (searchValue = '', searchedObject = {}) {
-  return []
-}
-
-/**
  * look for similar values ​​in the permitted properties of the object that is provided.
  *
  * @param {string[]} [whiteList=[]]
@@ -49,10 +38,10 @@ async function searchWhitelisted (whiteList = [], searchingValue = '', searchedO
 }
 
 /**
- *
+ * make GET request o the given endpoint
  *
  * @param {string} [jsonEndpoint='id/1.json']
- * @return {*}
+ * @return {Promise}
  */
 async function getFromApi (jsonEndpoint = 'id/1.json') {
   return axiosClient.get(jsonEndpoint)
