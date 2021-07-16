@@ -11,12 +11,14 @@
 
 - `/search?q=<search query>`
   - examples:
-    - http://localhost:3000/search?q=god
-    - http://localhost:3000/search?q=bob
-    - http://localhost:3000/search?q=Universe 
+    - https://guarded-anchorage-60205.herokuapp.com/search?q=god
+    - https://guarded-anchorage-60205.herokuapp.com/search?q=bob
+    - https://guarded-anchorage-60205.herokuapp.com/search?q=Universe 
 - `/hero/<slug-property>`
-  - examples:
-    - a
+  - example: https://guarded-anchorage-60205.herokuapp.com/hero/32-anti-monitor
+
+
+##### Timespent: 2h58m
 
 
 <div align="right">
