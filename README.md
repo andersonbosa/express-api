@@ -1,29 +1,31 @@
 
 <div id="top">
 
-# Express-API w/ Cache
+# superhero-consumer
 
 > Project developed as part of the [AppMasters][appmasters] selection test. It's an API that cache responses from [SuperHeroAPI][superheroapi].
 
-- Demo. on Heroku: /search?q=bob
+<br />
 
-### How-To 
+### Demo
 
-- `/search?q=<search query>`
-  - examples:
-    - https://guarded-anchorage-60205.herokuapp.com/search?q=god
-    - https://guarded-anchorage-60205.herokuapp.com/search?q=bob
-    - https://guarded-anchorage-60205.herokuapp.com/search?q=Universe 
-- `/hero/<slug-property>`
-  - example: https://guarded-anchorage-60205.herokuapp.com/hero/32-anti-monitor
+- [`/search?q=<search query>`](https://guarded-anchorage-60205.herokuapp.com/search?q=Universe)
+- [`/hero/<slug-property>`](https://guarded-anchorage-60205.herokuapp.com/hero/32-anti-monitor)
 
 
-##### Timespent: 2h58m
+######  ⏰ Timespent: 2h58m 
 
 
-<div align="right">
-  <button style="border: 1px solid grey;" href="#top">🔝 back to top</button>
+<div>
+  <br />
+  <br />
+  <br />
+  <div align="right"  style="border: 1px solid grey;">
+    <a href="#top">🔝 back to top</a>
+  </div>
 </div>
+
+
 
 [appmasters]: https://appmasters.io/
 [superheroapi]: https://akabab.github.io/superhero-api/api/
