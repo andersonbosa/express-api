@@ -1,7 +1,5 @@
 
-<div id="top">
-
-# superhero-consumer
+# superhero-consumer <div id="top">
 
 > Project developed as part of the [AppMasters][appmasters] selection test. It's an API that cache responses from [SuperHeroAPI][superheroapi].
 
